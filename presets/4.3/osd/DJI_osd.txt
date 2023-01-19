@@ -1,10 +1,12 @@
-#$ TITLE: Default 4.3 OSD settings
+#$ TITLE: default digital OSD
 #$ FIRMWARE_VERSION: 4.3
 #$ CATEGORY: OSD
 #$ STATUS: OFFICIAL
 #$ KEYWORDS: defaults, reset, OSD
-#$ AUTHOR: Betaflight
-#$ DESCRIPTION: Resets the OSD values back to Betaflight 4.3 defaults
+#$ AUTHOR: daich
+#$ DESCRIPTION: my standard digital osd. it is quite minimal
+
+set sbus_baud_fast = ON
 
 set osd_units = METRIC
 set osd_warn_arming_disable = ON
@@ -22,7 +24,6 @@ set osd_warn_no_gps_rescue = ON
 set osd_warn_gps_rescue_disabled = ON
 set osd_warn_rssi = OFF
 set osd_warn_link_quality = OFF
-set osd_warn_rssi_dbm = OFF
 set osd_warn_over_cap = OFF
 set osd_rssi_alarm = 20
 set osd_link_quality_alarm = 80
@@ -41,24 +42,23 @@ set osd_logo_on_arming = OFF
 set osd_logo_on_arming_duration = 5
 set osd_tim1 = 2560
 set osd_tim2 = 2561
-set osd_vbat_pos = 234
-set osd_rssi_pos = 234
-set osd_link_quality_pos = 234
-set osd_link_tx_power_pos = 234
+set osd_vbat_pos = 2503
+set osd_rssi_pos = 2514
+set osd_link_quality_pos = 2411
 set osd_rssi_dbm_pos = 234
 set osd_tim_1_pos = 234
-set osd_tim_2_pos = 234
+set osd_tim_2_pos = 2422
 set osd_remaining_time_estimate_pos = 234
 set osd_flymode_pos = 234
 set osd_anti_gravity_pos = 234
 set osd_g_force_pos = 234
-set osd_throttle_pos = 234
+set osd_throttle_pos = 2369
 set osd_vtx_channel_pos = 234
 set osd_crosshairs_pos = 205
 set osd_ah_sbar_pos = 206
 set osd_ah_pos = 78
-set osd_current_pos = 234
-set osd_mah_drawn_pos = 234
+set osd_current_pos = 2153
+set osd_mah_drawn_pos = 2158
 set osd_motor_diag_pos = 234
 set osd_craft_name_pos = 234
 set osd_display_name_pos = 234
@@ -70,7 +70,7 @@ set osd_home_dir_pos = 234
 set osd_home_dist_pos = 234
 set osd_flight_dist_pos = 234
 set osd_compass_bar_pos = 234
-set osd_altitude_pos = 234
+set osd_altitude_pos = 2163
 set osd_pid_roll_pos = 234
 set osd_pid_pitch_pos = 234
 set osd_pid_yaw_pos = 234
@@ -78,13 +78,12 @@ set osd_debug_pos = 234
 set osd_power_pos = 234
 set osd_pidrate_profile_pos = 234
 set osd_warnings_pos = 14665
-set osd_avg_cell_voltage_pos = 234
+set osd_avg_cell_voltage_pos = 2508
 set osd_pit_ang_pos = 234
 set osd_rol_ang_pos = 234
 set osd_battery_usage_pos = 234
 set osd_disarmed_pos = 234
 set osd_nheading_pos = 234
-set osd_up_down_reference_pos = 205
 set osd_nvario_pos = 234
 set osd_esc_tmp_pos = 234
 set osd_esc_rpm_pos = 234
@@ -103,7 +102,6 @@ set osd_profile_name_pos = 234
 set osd_rcchannels_pos = 234
 set osd_camera_frame_pos = 35
 set osd_efficiency_pos = 234
-set osd_total_flights_pos = 234
 set osd_stat_rtc_date_time = OFF
 set osd_stat_tim_1 = OFF
 set osd_stat_tim_2 = ON
@@ -137,6 +135,3 @@ set osd_displayport_device = AUTO
 set osd_rcchannels = -1,-1,-1,-1
 set osd_camera_frame_width = 24
 set osd_camera_frame_height = 11
-set osd_stat_avg_cell_value = OFF
-set osd_framerate_hz = 12
-set osd_menu_background = TRANSPARENT
